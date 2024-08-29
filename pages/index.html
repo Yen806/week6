@@ -1,57 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+  <title>index</title>
+</head>
+
+<body>
+
+  <%- include('./layout/header'); -%>
+    <div class="banner">
+      <div class="container text-light h-100">
+        <ui
+          class="container-fluid d-flex flex-column justify-content-end align-items-center justify-content-lg-center align-items-lg-start list-unstyled pb-8 h-100">
+          <li class="fs-6 fs-lg-5 mb-1 mb-lg-2">獻給新世代的生活風格誌</li>
+          <li class="fs-3 fs-lg-1 mb-4 mb-lg-5">
+            <h1>一起探索生活的無限可能</h1>
+          </li>
+          <li><a href="#"><button class="btn btn-accent-200 text-light">馬上訂閱<span
+                  class="material-symbols-outlined align-top">
+                  arrow_right_alt
+                </span></button></a></button></li>
+        </ui>
       </div>
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+      <section class="section1 py-8 container-fluid px-0">
+        <h2 class="pb-5">熱門主題</h2>
+        <div class="row gy-2 g-lg-3">
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-1.png">
+                <img src="../assets/images/theme-1-sm.png" class="card-img" alt="theme-1">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">城市漫遊者</p>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-3.png">
+                <img src="../assets/images/theme-3-sm.png" class="card-img" alt="theme-3">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">秘境尋蹤人</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-5.png">
+                <img src="../assets/images/theme-5-sm.png" class="card-img" alt="theme-5">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">品味設計家</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-8.png">
+                <img src="../assets/images/theme-8-sm.png" class="card-img" alt="theme-8">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">美食探險記</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-2.png">
+                <img src="../assets/images/theme-2-sm.png" class="card-img" alt="theme-2">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">美學建築誌</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-4.png">
+                <img src="../assets/images/theme-4-sm.png" class="card-img" alt="theme-4">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">慢活生活行</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-6.png">
+                <img src="../assets/images/theme-6-sm.png" class="card-img" alt="theme-6">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">工藝匠心賞</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card text-white border-0">
+              <picture class="card-img">
+                <source media="(min-width: 992px)" srcset="../assets/images/theme-7.png">
+                <img src="../assets/images/theme-7-sm.png" class="card-img" alt="theme-7">
+              </picture>
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="card-text fs-6 fs-lg-5">時尚先鋒派</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section2 my-lg-10">
+      <div class="container">
+        <div class="row container-fluid px-0">
+          <div class="col-lg-4">
+            <div class="d-flex flex-column justify-content-between h-100">
+              <h2 class="pb-5">精選文章</h2>
+              <div class="d-flex flex-column d-none d-lg-block">
+                <div class="d-flex mb-6">
+                  <a href="#" class="pe-2 link-neutral-500">1</a>
+                  <p>/</p>
+                  <a href="#" class="ps-2 link-neutral-500">5</a>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <buttom class="btn btn-outline-neutral-400 py-1">
+                    <span class="material-symbols-outlined fs-3 align-middle">west</span>
+                  </buttom>
+                  <buttom class="btn btn-outline-neutral-400 py-1">
+                    <span class="material-symbols-outlined fs-3 align-middle">east</span>
+                  </buttom>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              class="active card border-top-0 border-end-0 border-start-0 border-bottom-2 border-neutral-500 rounded-0">
+              <picture class="mb-5">
+                <source media="(min-width: 992px)" srcset="../assets/images/articles-1.png">
+                <img src="../assets/images/articles-1-sm.png" class="card-img-top" alt="article-img-1">
+              </picture>
+              <div class="card-body">
+                <h5 class="card-title mb-1">私人島嶼的露營奇遇記</h5>
+                <p class="card-text text-neutral-400 mb-5">
+                  遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                <a href="#" class="link-accent-200 fs-5 py-1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-top-0 border-end-0 border-start-0 border-bottom-2 border-neutral-500 rounded-0">
+              <picture class="mb-5">
+                <source media="(min-width: 992px)" srcset="../assets/images/articles-2.png">
+                <img src="../assets/images/articles-2-sm.png" class="card-img-top" alt="article-img-2">
+              </picture>
+              <div class="card-body">
+                <h5 class="card-title mb-1">窺探米其林三星主廚的絕密手藝</h5>
+                <p class="card-text text-neutral-400 mb-5">
+                  在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                <a href="#" class="link-accent-200 fs-5 py-1 position-relative">Read More<span
+                    class="badge bg-primary-300 text-primary-400 position-absolute end-0">會員專屬</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between py-8 d-lg-none">
+            <div class="d-flex">
+              <a href="#" class="pe-2 link-neutral-500">1</a>
+              <p>/</p>
+              <a href="#" class="ps-2 link-neutral-500">5</a>
+            </div>
+            <div class="d-flex justify-content-between">
+              <buttom class="btn btn-outline-neutral-400 py-1">
+                <span class="material-symbols-outlined fs-3 align-middle">west</span>
+              </buttom>
+              <buttom class="btn btn-outline-neutral-400 py-1">
+                <span class="material-symbols-outlined fs-3 align-middle">east</span>
+              </buttom>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
+
+    <section class="bg-primary-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 container-fluid py-10 d-flex flex-column align-items-center">
+            <p class="text-accent-200 fs-lg-4 fs-6 text-lg-primary-400 mb-2 mb-lg-4">\ 母親節強檔活動 / </p>
+            <h2 class="fs-lg-2 fs-4 mb-5 mb-lg-4">家庭訂閱方案限時 7 折</h1>
+              <div class="mb-5 mb-lg-7">
+                <p class="fs-6 mb-3"><i class="bi bi-check pe-2"></i>每月最新文章無限閱讀</p>
+                <p class="fs-6 mb-3"><i class="bi bi-check pe-2"></i>專屬會員限定內容</p>
+                <p class="fs-6 mb-3"><i class="bi bi-check pe-2"></i>定期電子報</p>
+                <p class="fs-6 mb-3"><i class="bi bi-check pe-2"></i>年度精選禮物</p>
+                <p class="fs-6 mb-3"><i class="bi bi-check pe-2"></i>24 /7 優先客戶服務</p>
+                <p class="fs-6"><i class="bi bi-check pe-2"></i>為每個成員量身打造專屬行程</p>
+              </div>
+              <a href="#"></a><button class="btn btn-accent-200 link-light" type="button">我想了解</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-lg-10 section4">
+      <div class="container">
+        <h2 class="fs-lg-2 mb-lg-7">大家都在看</h2>
+        <div class="row">
+          <div class="col-lg-3 bg-light">
+            <ul class="d-none d-lg-block p-5 text-align-center">
+              <li class="mb-5 ms-5"><a href="#" class="fs-4 border-0 p-3 active">酒精路跑地圖</a></li>
+              <li class="mb-5 ms-5"><a href="#" class="fs-4 border-0 p-3">台北拉麵圖鑑</a></li>
+              <li class="mb-5 ms-5"><a href="#" class="fs-4 border-0 p-3">海島自由行</a></li>
+              <li class="mb-5 ms-5"><a href="#" class="fs-4 border-0 p-3">短天數出國推薦</a></li>
+              <li class="mb-5 ms-5"><a href="#" class="fs-4 border-0 p-3">週末露營趣</a></li>            
+            </ul>
+          </div>
+          <div class="col-lg-9"></div>
+        </div>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
